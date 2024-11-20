@@ -1,0 +1,60 @@
+
+<main class="enter-otp">
+  <h1 class="otp-title">Nhập mã OTP</h1>
+
+  <form class="otp-form" (ngSubmit)="onSubmit()">
+    <div class="otp-input-group">
+      <label for="otp1" class="sr-only">OTP digit 1</label>
+      <input #otpInput type="text" id="otp1" class="otp-input" maxlength="1" autocomplete="off"
+             aria-label="OTP digit 1"/>
+      <label for="otp2" class="sr-only">OTP digit 2</label>
+      <input #otpInput type="text" id="otp2" class="otp-input" maxlength="1" autocomplete="off"
+             aria-label="OTP digit 2"/>
+      <label for="otp3" class="sr-only">OTP digit 3</label>
+      <input #otpInput type="text" id="otp3" class="otp-input" maxlength="1" autocomplete="off"
+             aria-label="OTP digit 3"/>
+      <label for="otp4" class="sr-only">OTP digit 4</label>
+      <input #otpInput type="text" id="otp4" class="otp-input" maxlength="1" autocomplete="off"
+             aria-label="OTP digit 4"/>
+      <label for="otp5" class="sr-only">OTP digit 5</label>
+      <input #otpInput type="text" id="otp5" class="otp-input" maxlength="1" autocomplete="off"
+             aria-label="OTP digit 5"/>
+      <label for="otp6" class="sr-only">OTP digit 6</label>
+      <input #otpInput type="text" id="otp6" class="otp-input" maxlength="1" autocomplete="off"
+             aria-label="OTP digit 6"/>
+    </div>
+    <p class="error-message" [ngStyle]="{'visibility': errorOtp ? 'visible' : 'hidden'}">Mã OTP không đúng, còn 4 lần nhập lại!</p>
+
+
+    <p class="resend-otp">
+      Không nhận được mã OTP?
+      <button type="button" class="resend-link" (click)="resendOtp()">Gửi lại</button>
+    </p>
+
+    <div class="keyboard">
+      <div class="keyboard-row">
+        <button type="button" class="key" (click)="appendDigit('1')">1</button>
+        <button type="button" class="key" (click)="appendDigit('2')">2</button>
+        <button type="button" class="key" (click)="appendDigit('3')">3</button>
+      </div>
+      <div class="keyboard-row">
+        <button type="button" class="key" (click)="appendDigit('4')">4</button>
+        <button type="button" class="key" (click)="appendDigit('5')">5</button>
+        <button type="button" class="key" (click)="appendDigit('6')">6</button>
+      </div>
+      <div class="keyboard-row">
+        <button type="button" class="key" (click)="appendDigit('7')">7</button>
+        <button type="button" class="key" (click)="appendDigit('8')">8</button>
+        <button type="button" class="key" (click)="appendDigit('9')">9</button>
+      </div>
+      <div class="keyboard-row">
+        <button type="button" class="key key-triple" (click)="appendDigit('000')">000</button>
+        <button type="button" class="key" (click)="appendDigit('0')">0</button>
+        <button type="button" class="key key-delete" (click)="deleteDigit()" aria-label="Delete">
+          <span class="sr-only">Delete</span>
+        </button>
+      </div>
+    </div>
+  </form>
+</main>
+

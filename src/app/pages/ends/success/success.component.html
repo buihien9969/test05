@@ -1,0 +1,56 @@
+<main class="success-page">
+
+  <section class="success-content">
+    <img
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/68a9afdf4af6fa57a5cc51f3059713d43296d64c6e869618912631eba715f054?placeholderIfAbsent=true&apiKey=7c20b8e89d514e09834af337881127f9"
+      alt="Success icon" class="success-icon"/>
+    <h1 class="success-title">Mở tài khoản thành công!</h1>
+    <div class="user-info">
+      <div class="info-column">
+        <div class="info-item">
+          <h2 class="info-label">Họ và tên</h2>
+          <p class="info-value">{{ userInfo.name }}</p>
+        </div>
+        <div class="info-item">
+          <h2 class="info-label">Số CMND/CCCD</h2>
+          <p class="info-value">{{ userInfo.idNumber }}</p>
+        </div>
+      </div>
+      <div class="info-column">
+        <div class="info-item">
+          <h2 class="info-label">Số điện thoại</h2>
+          <p class="info-value">{{ userInfo.phoneNumber }}</p>
+        </div>
+        <div class="info-item">
+          <h2 class="info-label">Ngày sinh</h2>
+          <p class="info-value">{{ userInfo.dateOfBirth }}</p>
+        </div>
+      </div>
+      <div class="info-column">
+        <div class="info-item">
+          <h2 class="info-label">Số tài khoản</h2>
+          <p class="info-value">{{ userInfo.accountNumber }}</p>
+        </div>
+        <div class="info-item">
+          <h2 class="info-label">Giới tính</h2>
+          <p class="info-value">{{ userInfo.gender }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="address-info">
+      <div class="info-item">
+        <h2 class="info-label">Địa chỉ thường trú</h2>
+        <p class="info-value">{{ userInfo.permanentAddress }}</p>
+      </div>
+      <div class="info-item">
+        <h2 class="info-label">Nơi ở hiện tại</h2>
+        <p class="info-value">{{ userInfo.currentAddress }}</p>
+      </div>
+    </div>
+  </section>
+
+  <button class="home-button" (click)="goToHomePage()">Về trang chủ</button>
+</main>
+
+
+

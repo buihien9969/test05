@@ -1,0 +1,124 @@
+:host {
+  display: contents;
+}
+.face-recognition-capture {
+  border-radius: 8px;
+  background-color: #f6f7f8;
+  display: flex;
+  padding-bottom: 160px;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+}
+.header {
+  background-color: #fff;
+  align-self: stretch;
+  position: relative;
+  display: flex;
+  min-height: 96px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.logo {
+  aspect-ratio: 4.17;
+  object-fit: contain;
+  width: 167px;
+  align-self: stretch;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.nav-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  width: 32px;
+}
+.progress-bar {
+  position: absolute;
+  display: flex;
+  min-width: 240px;
+  align-items: center;
+  gap: 24px;
+  left: 50%;
+  bottom: 22px;
+  transform: translateX(-50%);
+  width: 675px;
+  font: 400 16px Noto Sans, sans-serif;
+}
+.progress-line {
+  object-fit: contain;
+  width: 528px;
+  position: absolute;
+  right: 55px;
+  top: 12px;
+  height: 0;
+}
+.progress-steps {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.step-number {
+  border-radius: 50%;
+  background-color: #fff3e5;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #838383;
+  border: 1px solid transparent;
+}
+.step.active .step-number {
+  color: #eb6719;
+  border-color: #eb6719;
+}
+.step-label {
+  margin-top: 4px;
+  color: #212121;
+}
+.main-title {
+  color: #121212;
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  letter-spacing: -0.32px;
+  margin-top: 64px;
+  font: 600 32px Noto Sans, sans-serif;
+}
+.capture-area {
+  background-color: #838383;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: 32px;
+}
+@media (max-width: 991px) {
+  .face-recognition-capture {
+    padding-bottom: 100px;
+  }
+  .header {
+    padding: 0 20px;
+  }
+  .progress-bar {
+    max-width: 100%;
+  }
+  .progress-line {
+    max-width: 100%;
+  }
+  .main-title {
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,68 @@
+<main class="scan-id">
+  <header class="header">
+    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c8b70c73050f02786556bfbf1c6512cb2e3d3f2668e23609f556f812fa16adf8?placeholderIfAbsent=true&apiKey=7c20b8e89d514e09834af337881127f9" alt="Company logo" class="company-logo" />
+    <div class="right-icons">
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/42a14f285d6006856ba05ce666994c2a5df1f435aa354fc48edc1b2184faad0c?placeholderIfAbsent=true&apiKey=7c20b8e89d514e09834af337881127f9" alt="User profile icon" class="profile-icon" />
+    </div>
+    <nav class="progress" aria-label="Progress steps">
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/54d1c4d69a57149cb61f38fcacad028cecd5d7ee66cb09fa063b81dfab5e1f1c?placeholderIfAbsent=true&apiKey=7c20b8e89d514e09834af337881127f9" alt="" class="progress-bar" />
+      <div class="step step-active">
+        <div class="step-number">1</div>
+        <div class="step-label">Chụp khuôn mặt</div>
+      </div>
+      <div class="step step-current">
+        <div class="step-number">2</div>
+        <div class="step-label">Chụp CMND/CCCD</div>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-label">Xác thực</div>
+      </div>
+      <div class="step">
+        <div class="step-number">4</div>
+        <div class="step-label">Lấy vân tay</div>
+      </div>
+    </nav>
+  </header>
+
+  <h1 class="page-title">Xác nhận & bổ sung thông tin</h1>
+
+  <form class="info-form">
+    <div class="form-columns">
+      <div class="form-column">
+        <div class="form-group">
+          <label for="phone" class="form-label">Số điện thoại</label>
+          <input type="tel" id="phone" class="form-input error" aria-invalid="true" aria-describedby="phone-error" />
+          <p id="phone-error" class="error-message">Vui lòng nhập số điện thoại!</p>
+        </div>
+        <div class="form-group">
+          <label for="fullName" class="form-label">Họ và tên</label>
+          <input type="text" id="fullName" class="form-input" value="Nguyễn Vân Anh" readonly />
+        </div>
+        <div class="form-group">
+          <label for="birthDate" class="form-label">Ngày sinh</label>
+          <input type="text" id="birthDate" class="form-input" value="18/07/1995" readonly />
+        </div>
+        <div class="form-group">
+          <label for="permanentAddress" class="form-label">Địa chỉ thường trú</label>
+          <textarea id="permanentAddress" class="form-input" readonly>128, Ngõ 12, Lê Quang Đạo, Mễ Trì, Từ Liêm, Hà Nội</textarea>
+        </div>
+      </div>
+      <div class="form-column">
+        <div class="form-group">
+          <label for="idNumber" class="form-label">Số CMND/CCCD</label>
+          <input type="text" id="idNumber" class="form-input" value="01234567890" readonly />
+        </div>
+        <div class="form-group">
+          <label for="gender" class="form-label">Giới tính</label>
+          <input type="text" id="gender" class="form-input" value="Nữ" readonly />
+        </div>
+        <div class="form-group">
+          <label for="currentAddress" class="form-label">Nơi ở hiện tại</label>
+          <textarea id="currentAddress" class="form-input" readonly>128, Ngõ 12, Lê Quang Đạo, Mễ Trì, Từ Liêm, Hà Nội</textarea>
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="submit-button">Tiếp tục</button>
+  </form>
+</main>

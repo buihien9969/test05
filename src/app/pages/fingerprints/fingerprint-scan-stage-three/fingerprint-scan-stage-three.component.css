@@ -1,0 +1,236 @@
+.fingerprint-scan {
+  border-radius: 8px;
+  background-color: #f6f7f8;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  padding-bottom: 332px;
+}
+
+.header {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  min-height: 96px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.company-logo {
+  width: 167px;
+  height: auto;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.menu-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.progress-bar {
+  position: absolute;
+  left: 50%;
+  bottom: 22px;
+  transform: translateX(-50%);
+  width: 675px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progress-line {
+  position: absolute;
+  top: 12px;
+  right: 55px;
+  width: 528px;
+  height: 2px;
+  z-index: 0;
+}
+
+.progress-steps {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 160px;
+}
+
+.step-number {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.step-active {
+  background-color: #eb6719;
+  color: #fff;
+}
+
+.step-completed {
+  background-color: #eb6719;
+  color: #fff;
+}
+
+.step-inactive {
+  background-color: #fff3e5;
+  color: #eb6719;
+  border: 1px solid #eb6719;
+}
+
+.step-disabled {
+  background-color: #fff3e5;
+  color: #838383;
+}
+
+.step-text {
+  font-size: 14px;
+  color: #212121;
+}
+
+.scan-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 64px;
+}
+
+.scan-title {
+  color: #121212;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.fingerprint-container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.fingerprint {
+  width: 160px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(164deg, #fff 9.87%, rgba(255, 255, 255, 0.7) 99.83%);
+  backdrop-filter: blur(20px);
+}
+
+/*.fingerprint-active {*/
+/*  border: 2px solid #838383;*/
+/*  !*border: 2px solid red;*!*/
+/*}*/
+
+.fingerprint-icon {
+  width: 160px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(164deg, #fff 9.87%, rgba(255, 255, 255, 0.7) 99.83%);
+  backdrop-filter: blur(20px);
+  /*border: 2px solid #838383;*/
+  position: relative;
+
+
+
+
+}
+.fingerprint-icon svg {
+  position: fixed;
+}
+
+
+
+
+@media (max-width: 991px) {
+  .fingerprint-scan {
+    padding-bottom: 100px;
+  }
+
+  .header {
+    padding: 0 20px;
+  }
+
+  .progress-bar {
+    width: 100%;
+    max-width: 675px;
+  }
+
+  .progress-line {
+    width: calc(100% - 110px);
+    right: 55px;
+  }
+
+  .scan-section {
+    margin-top: 40px;
+  }
+
+  .scan-title {
+    margin-bottom: 40px;
+  }
+
+  .fingerprint-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
+
+.fingerprint-item {
+  position: relative;
+  margin: 10px;
+}
+
+
+.fingerprint-item.success .success-icon {
+  display: inline-block;
+}
+
+.success-icon {
+
+  position: absolute;
+  /*right: -10px;*/
+  /*top: -10px;*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+

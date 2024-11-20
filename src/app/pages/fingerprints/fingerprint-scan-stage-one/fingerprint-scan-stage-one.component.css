@@ -1,0 +1,178 @@
+.fingerprint-scanner {
+  border-radius: 8px;
+  background-color: #f6f7f8;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  padding-bottom: 332px;
+}
+
+.header {
+  background-color: #fff;
+  width: 100%;
+  min-height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.logo {
+  width: 167px;
+  object-fit: contain;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.progress-nav {
+  position: absolute;
+  left: 50%;
+  bottom: 22px;
+  transform: translateX(-50%);
+  width: 675px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progress-line {
+  position: absolute;
+  top: 12px;
+  right: 55px;
+  width: 528px;
+  height: 2px;
+  z-index: 0;
+}
+
+.progress-steps {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 160px;
+}
+
+.step-number {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.step.active .step-number,
+.step.completed .step-number {
+  background-color: #eb6719;
+  color: #fff;
+}
+
+.step-text {
+  font-size: 16px;
+  color: #212121;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 64px;
+}
+
+.main-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #121212;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+
+
+
+.fingerprint-option svg {
+  position: absolute;
+}
+
+
+
+
+.fingerprint-options {
+  display: flex;
+  gap: 40px;
+}
+
+.fingerprint-option {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(164deg, #fff 9.87%, rgba(255, 255, 255, 0.7) 99.83%);
+  backdrop-filter: blur(20px);
+}
+
+.fingerprint-option.active {
+  border: 2px solid #838383;
+}
+
+.fingerprint-icon,
+.fingerprint-image {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+
+@media (max-width: 991px) {
+  .fingerprint-scanner {
+    padding-bottom: 100px;
+  }
+
+  .header {
+    padding: 0 20px;
+  }
+
+  .progress-nav {
+    width: 100%;
+  }
+
+  .progress-line {
+    width: calc(100% - 110px);
+  }
+
+  .main-title {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .fingerprint-options {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

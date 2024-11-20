@@ -1,0 +1,110 @@
+.home {
+  width: 1280px; /* Set to fit the screen width */
+  height: 800px; /* Set to fit the screen height */
+  border-radius: 8px;
+  background-color: #f6f7f8;
+  display: flex;
+  padding: 0 0 94px;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+}
+
+
+
+.main-title {
+  color: #121212;
+  text-align: center;
+  letter-spacing: -0.32px;
+  margin-top: 45px;
+  font: 600 32px 'Noto Sans', sans-serif;
+}
+
+.transaction-options {
+  display: flex;
+  margin-top: 45px;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.transaction-card {
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  backdrop-filter: blur(20px);
+  background-color: #fff;
+  display: flex;
+  width: 320px;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 40px 0 24px;
+}
+
+.transaction-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  width: 160px;
+  max-width: 100%;
+}
+
+.transaction-title {
+  color: #212121;
+  text-align: center;
+  letter-spacing: -0.24px;
+  margin-top: 32px;
+  font: 600 24px 'Noto Sans', sans-serif;
+}
+
+.account-query {
+  color: #838383;
+  letter-spacing: 0.4px;
+  text-align: center;
+  margin-top: 45px;
+  font: 400 20px 'Noto Sans', sans-serif;
+}
+
+.cta-button {
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background-color: #f4600c;
+  display: flex;
+  margin-top: 45px;
+  color: #fff;
+  letter-spacing: -0.24px;
+  padding: 12px 40px;
+  font: 600 24px 'Noto Sans', sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1280px) {
+  .home {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 0 20px; /* Adjust padding for smaller screens */
+  }
+
+  .main-title,
+  .transaction-options,
+  .account-query,
+  .cta-button {
+    margin-top: 40px;
+  }
+
+  .cta-button {
+    padding: 12px 20px;
+  }
+}
+@media (min-width: 1280px) {
+  .home {
+    width: 100%; /* Use full width of the screen */
+    height: auto; /* Adjust height based on content */
+  }
+}

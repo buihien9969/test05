@@ -1,0 +1,146 @@
+:host {
+  display: contents;
+}
+.scan-id-capture {
+  border-radius: 8px;
+  background-color: #f6f7f8;
+  display: flex;
+  padding: 0 0 290px;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+}
+.header {
+  background-color: #fff;
+  align-self: stretch;
+  position: relative;
+  display: flex;
+  min-height: 96px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.company-logo {
+  aspect-ratio: 4.17;
+  object-fit: contain;
+  width: 167px;
+  align-self: stretch;
+}
+.right-icons {
+  align-self: stretch;
+  display: flex;
+  align-items: start;
+  gap: 12px;
+}
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.menu-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  width: 32px;
+}
+.progress-bar {
+  position: absolute;
+  display: flex;
+  min-width: 240px;
+  align-items: center;
+  gap: 24px;
+  left: 50%;
+  bottom: 22px;
+  transform: translateX(-50%);
+  width: 675px;
+  font: 400 16px Noto Sans, sans-serif;
+}
+.progress-line {
+  object-fit: contain;
+  width: 528px;
+  position: absolute;
+  right: 55px;
+  top: 12px;
+  height: 0;
+}
+.step-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.step-number {
+  border-radius: 48px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.step.completed .step-number {
+  background-color: #eb6719;
+  color: #fff;
+}
+.step.current .step-number {
+  background-color: #fff3e5;
+  color: #eb6719;
+  border: 1px solid #eb6719;
+}
+.step:not(.completed):not(.current) .step-number {
+  background-color: #fff3e5;
+  color: #838383;
+}
+.step-label {
+  margin-top: 4px;
+  color: #212121;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 64px;
+}
+.capture-title {
+  color: #121212;
+  text-align: center;
+  font: 600 32px Noto Sans, sans-serif;
+  letter-spacing: -0.32px;
+  margin-bottom: 32px;
+}
+.capture-area {
+  width: 430px;
+  max-width: 100%;
+}
+.capture-frame {
+  border-radius: 16px;
+  background-color: #838383;
+  min-height: 270px;
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .scan-id-capture {
+    padding-bottom: 100px;
+  }
+  .header {
+    padding: 0 20px;
+  }
+  .progress-bar {
+    max-width: 100%;
+  }
+  .progress-line {
+    max-width: 100%;
+  }
+  .capture-title {
+    margin-top: 40px;
+  }
+}
+
+
